@@ -1,0 +1,264 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+#logo {
+    color: red;
+    font-size: larger;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(219, 141, 23, 0.55);
+    border-color: rgba(242, 156, 28, 0.73);
+}
+
+li.nav-item:nth-child(n)>a:nth-child(n) {
+    color: white;
+}
+
+li.nav-item:nth-child(n)>a:nth-child(n):hover {
+    color: red;
+}
+
+li.nav-item:nth-child(n)>a:nth-child(n) {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.dropdown-menu>li:nth-child(n)>a:nth-child(n):hover {
+    background-color: rgb(15, 14, 13);
+    color: wheat;
+}
+
+.dropdown-menu {
+    background-color: wheat;
+}
+
+#navbarSupportedContent {
+    padding-left: 40%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.916);
+}
+
+.navbar-light .navbar-brand {
+    color: white
+}
+
+div.carousel-item:nth-child(n)>div:nth-child(n)>p:nth-child(n) {
+    margin-bottom: -2rem;
+    color: aqua;
+    font-size: bold;
+    font-weight: bolder;
+}
+
+div.carousel-item:nth-child(n)>div:nth-child(n)>h5:nth-child(n) {
+    font-size: bolder;
+    font-weight: bolder;
+    color: rgb(5, 5, 5);
+    /* color: rgb(124, 5, 5);  */
+    text-transform: uppercase;
+    background-color: rgba(152, 251, 152, 0.425);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.carousel-indicators>button:nth-child(n) {
+    background-color: transparent;
+}
+
+.btn {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: black;
+    /* background-color: rgb(149, 13, 13);   */
+    color: wheat;
+}
+
+.text-primary {
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px red;
+}
+
+div.col-sm-12:nth-child(1)>p:nth-child(2) {
+    text-shadow: 1px 1px 2px grey;
+}
+
+.card-img {
+    box-shadow: 3px 3px 8px black, -3px -3px 8px black;
+    /*   box-shadow: 3px 3px 8px rgb(155, 7, 7), -3px -3px 8px rgb(199, 13, 13);  */
+}
+
+i {
+    color: blue;
+}
+
+div.text-light>a:nth-child(4) {
+    background-color: black;
+    /* background-color: rgb(212, 12, 12); */
+}
+
+div.text-light>a:nth-child(4):hover {
+    background-color: white;
+    color: black;
+}
+
+.services>div:nth-child(n)>div:nth-child(n)>div:nth-child(n)>div:nth-child(n)>div:nth-child(n)>div:nth-child(n)>p:nth-child(n) {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.rounded-circle {
+    border: 1px solid blue;
+}
+
+div.my-3:nth-child(1)>div:nth-child(1):hover {
+    background: url('https://mbbscouncilcdn.s3.amazonaws.com/wp-content/uploads/2017/04/Subharti-Medical-College-Meerut-main-building.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.my-3:nth-child(n)>div:nth-child(n)>div:nth-child(n)>h5:nth-child(n) {
+    color: black;
+    font-size: bolder;
+    font-weight: bolder;
+}
+
+div.my-3:nth-child(n)>div:nth-child(n)>div:nth-child(n)>p:nth-child(n) {
+    color: rgb(90, 110, 38);
+    font-weight: 800;
+}
+
+div.my-3:nth-child(2)>div:nth-child(1):hover {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHe-bgQ8FioyNF-Mu6WqX1LuAfp3c63IcUow&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.my-3:nth-child(3)>div:nth-child(1):hover {
+    /* background: url('https://tih.iitr.ac.in/assets/img/itas.png'); */
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrv16HenqjpHW7C2EnTTMxW4YjEqRscbAAvg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about>div:nth-child(1)>div:nth-child(2) {
+    background-color: black;
+}
+
+div.col-sm-12:nth-child(1)>h1:nth-child(1) {
+    color: wheat;
+}
+
+div.col-sm-12:nth-child(1)>p:nth-child(2) {
+    color: wheat;
+}
+
+#collapseTwo>div:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+#collapseOne>div:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+#collapseThree>div:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+#headingThree>button:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+#headingOne>button:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+#headingTwo>button:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.mt-4>div:nth-child(1)>h1:nth-child(1) {
+    color: wheat;
+}
+
+.services>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>h1:nth-child(1) {
+    color: black;
+}
+
+.mt-4>div:nth-child(n)>hr:nth-child(n) {
+    background-color: red;
+}
+
+.services>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>hr:nth-child(2) {
+    background-color: red;
+}
+
+.team>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>h1:nth-child(1) {
+    color: black;
+}
+
+.team>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>hr:nth-child(2) {
+    color: red;
+}
+
+.contact>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>h1:nth-child(1) {
+    color: black;
+}
+
+div.col-md-5:nth-child(2)>img:nth-child(1) {
+    border: .5px solid wheat;
+    padding: 5px;
+}
+
+#inputEmail4 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {}
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.imgb {
+    margin-left: 48vw;
+}
