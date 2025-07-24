@@ -395,6 +395,19 @@
         </div>
     </div>
 
+    <div id="chatbot-widget-container">
+    <button id="chatbot-toggle-button" aria-label="Toggle Chatbot">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square chat-icon">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x close-icon">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </button>
+    <iframe id="chatbot-iframe" src="YOUR_DEPLOYED_APPS_SCRIPT_WEB_APP_URL" title="GHCL AI Chatbot"></iframe>
+</div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
@@ -404,8 +417,35 @@
     </script>
     <script src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+    
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const chatbotToggleButton = document.getElementById('chatbot-toggle-button');
+    const chatbotWidgetContainer = document.getElementById('chatbot-widget-container');
+    const chatbotIframe = document.getElementById('chatbot-iframe');
 
+    chatbotToggleButton.addEventListener('click', function() {
+        chatbotWidgetContainer.classList.toggle('open');
+        // Optional: reload iframe content if it's closed and then reopened
+        // This ensures the chat state is fresh on re-open, but might be slower.
+        // if (!chatbotWidgetContainer.classList.contains('open')) {
+        //     chatbotIframe.src = chatbotIframe.src; // Reloads the iframe
+        // }
+    });
 
+    // Optional: Hide widget if clicked outside (more complex, consider if truly needed for UX)
+    // document.addEventListener('click', function(event) {
+    //     if (!chatbotWidgetContainer.contains(event.target) && chatbotWidgetContainer.classList.contains('open')) {
+    //         // Check if the click was not inside the iframe itself
+    //         const clickedInsideIframe = chatbotIframe.contentWindow.document.body.contains(event.target);
+    //         if (!clickedInsideIframe) {
+    //              chatbotWidgetContainer.classList.remove('open');
+    //         }
+    //     }
+    // });
+});
+
+    </script>
 
 </body>
 
