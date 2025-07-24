@@ -262,3 +262,99 @@ div.col-md-5:nth-child(2)>img:nth-child(1) {
 .imgb {
     margin-left: 48vw;
 }
+
+
+/* Chatbot Widget Container */
+#chatbot-widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Ensure it's on top of other content */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns toggle button to the right */
+}
+
+/* Chatbot Toggle Button */
+#chatbot-toggle-button {
+    background-color: #007bff; /* GHCL-like blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s;
+    outline: none; /* Remove focus outline */
+}
+
+#chatbot-toggle-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Icons within the button */
+#chatbot-toggle-button .chat-icon {
+    display: block; /* Show chat icon by default */
+}
+#chatbot-toggle-button .close-icon {
+    display: none; /* Hide close icon by default */
+}
+
+/* Chatbot Iframe */
+#chatbot-iframe {
+    border: none; /* Remove iframe border */
+    border-radius: 15px; /* Match chatbot's border-radius if possible */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    width: 0; /* Initially hidden */
+    height: 0; /* Initially hidden */
+    margin-top: 15px; /* Space between button and iframe */
+    opacity: 0; /* Start invisible for animation */
+    pointer-events: none; /* Prevent interaction when hidden */
+    transform: scale(0.8); /* Start smaller for animation */
+    transform-origin: bottom right; /* Scale from bottom right */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, 
+                opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* State when chatbot is open */
+#chatbot-widget-container.open #chatbot-iframe {
+    width: 380px; /* Adjust to desired chatbot width */
+    height: 600px; /* Adjust to desired chatbot height */
+    opacity: 1;
+    pointer-events: auto; /* Allow interaction when open */
+    transform: scale(1);
+}
+
+/* Toggle icon display when open */
+#chatbot-widget-container.open #chatbot-toggle-button .chat-icon {
+    display: none;
+}
+#chatbot-widget-container.open #chatbot-toggle-button .close-icon {
+    display: block;
+}
+
+/* Media query for smaller screens or mobile */
+@media (max-width: 768px) {
+    #chatbot-widget-container.open #chatbot-iframe {
+        width: calc(100vw - 40px); /* Full width minus margin on small screens */
+        height: 80vh; /* Adjust height for mobile */
+        bottom: 10px;
+        right: 10px;
+        left: 10px; /* Center horizontally */
+        margin: auto;
+    }
+    #chatbot-widget-container {
+        bottom: 10px;
+        right: 10px;
+    }
+    #chatbot-toggle-button {
+        width: 50px;
+        height: 50px;
+    }
+}
