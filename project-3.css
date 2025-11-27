@@ -325,7 +325,7 @@ div.col-md-5:nth-child(2)>img:nth-child(1) {
 /* State when chatbot is open */
 #chatbot-widget-container.open #chatbot-iframe {
     width: 380px; /* Adjust to desired chatbot width */
-    height: 600px; /* Adjust to desired chatbot height */
+    height: 500px; /* Adjust to desired chatbot height */
     opacity: 1;
     pointer-events: auto; /* Allow interaction when open */
     transform: scale(1);
@@ -358,3 +358,4 @@ div.col-md-5:nth-child(2)>img:nth-child(1) {
         height: 50px;
     }
 }
+
