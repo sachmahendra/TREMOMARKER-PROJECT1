@@ -267,8 +267,8 @@ div.col-md-5:nth-child(2)>img:nth-child(1) {
 /* Chatbot Widget Container */
 #chatbot-widget-container {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
     z-index: 9999; /* Ensure it's on top of other content */
     display: flex;
     flex-direction: column;
@@ -324,12 +324,11 @@ div.col-md-5:nth-child(2)>img:nth-child(1) {
 
 /* State when chatbot is open */
 #chatbot-widget-container.open #chatbot-iframe {
-    width: 360px; /* Adjust to desired chatbot width */
+    width: 300px; /* Adjust to desired chatbot width */
     height: 420px; /* Adjust to desired chatbot height */
     opacity: 1;
     pointer-events: auto; /* Allow interaction when open */
     transform: scale(1);
-    margin-bottom:-20px;
 }
 
 /* Toggle icon display when open */
@@ -355,10 +354,11 @@ div.col-md-5:nth-child(2)>img:nth-child(1) {
         right: 10px;
     }
     #chatbot-toggle-button {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 }
+
 
 
 
